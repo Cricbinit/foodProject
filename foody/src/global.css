@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(17, 18, 17);
+}
+#navbar {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  /* background-color: #efefef; */
+  background-color: #9e9595;
+  position:fixed;
+}
+#navbar article {
+  height: inherit;
+  width: 94%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+#navbar article #logo {
+  display: flex;
+  flex-basis: 40%;
+  justify-content: flex-start;
+  align-items: center;
+  height: inherit;
+  padding: 10px;
+  gap: 50px;
+}
+#icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-style: italic;
+  color: white;
+  height: 70px;
+  width: 70px;
+  background-color: #f80;
+  border-radius: 100%;
+}
+
+#input {
+  padding: 15px;
+  height: 30px;
+  width: 50%;
+  outline: none;
+  border: 1px solid #ffb84c;
+  border-radius: 20px;
+}
+#input::placeholder {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#navbar article #menu {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: inherit;
+  padding: 10px;
+}
+#navbar article #menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 50px;
+  width: 100%;
+}
+#navbar article #menu ul .list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6e1c3;
+  height: 30px;
+  width: 100px;
+  list-style: none;
+  font-size: 14px;
+  border-radius: 20px;
+}
+#navbar article #menu ul .list a {
+  text-decoration: none;
+  color: #121212;
+  font-weight: 600;
+}
+#navbar article #menu ul .list:hover {
+  background-color: #ffb84c;
+  transition: 0.5s;
+}
+
+.cardSection {
+  width: 100%;
+  /* background-color: #eff5f5; */
+  background-color: white;
+  border-top: 0.5px solid #ffb84c;
+  padding-top: 90px;
+}
+.cardSection .cards {
+  height: 250px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cardSection .cards .innerCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 250px;
+}
+
+.cardSection .cards .innerCard img {
+  height: 200px;
+  width: 250px;
+  border-radius: 5px;
+  outline: 1px solid rgb(241, 125, 9);
+}
+
+#footer {
+  height: 350px;
+  width: 100%;
+  background-color: rgb(17, 18, 17);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 50px 0px 50px;
+  /* border-bottom: 2px solid red; */
+}
+#footer #companyDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+#footer #companyDetails ul{
+  gap: 5px;
+  list-style: none;
+}
+#footer #companyDetails ul li {
+  height: 30px;
+}
+#footer #companyDetails ul li a{
+  text-decoration: none;
+  color: white;
+}
+#footer #companyDetails ul li a:hover{
+color: orange;
+}
+#footer #companyDetails p {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: grey;
+}
+#footer .Company {
+  flex-basis: 20%;
+  /* background-color: red; */
+}
+
+#contact{
+    color: grey;
+    font-weight: bolder;
+  }
+
+  #legal{
+      font-size: 21px;
+    color: grey;
+    font-weight: bolder;
+  }
+  #social-media{
+      font-size: 21px;
+    color: grey;
+    font-weight: bolder;
+  }
+  
+
+  /* last section */
+#last-section{
+  width: 100%;
+  height: 100px;
+  border-top: 2px solid grey;
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#last-section .last-article{
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+
+  #last-section .last-article .last-div{
+    color: white;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #last-icons{
+padding-left: 90px;
+    font-size: 40px;
+    gap: 90px;
+    display: flex;
+    justify-content: space-evenly;
+  }
